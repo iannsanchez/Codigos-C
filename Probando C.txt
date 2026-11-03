@@ -1,0 +1,99 @@
+Es un lenguaje compilador(o sea que transforma el código para que la computadora pueda leerlo en su idioma digamos)
+    Diferencia las min y mayus
+    Las sentencias terminan en;
+Los bloques se delimitan con {}
+
+La funcion main() finaliza con return 0; o si es un C moderno, no hace falta escribirlo y lo pone solo.
+
+system("PAUSE") → comando de Windows, NO C estándar
+_getch()         → función de conio.h, tampoco C estándar
+
+int main es la funcion principal del programa
+int viene de integer = Entero
+
+Los comentarios en C pueden ocupar varias líneas y
+se encuentran delimitados entre /* y */
+/* probando
+nomas
+;)*/
+
+Los tipos elementales de variables en C son : 
+    Enteros(int)
+    Reales(float, double)
+    Caracteres(char)
+    Punteros(*)
+    Booleanos (bool) /*Para usarlo necesito #include <stdbool.h>*/
+_
+Ciertos tipos básicos admiten diversos modificadores :
+
+    unsigned : Sólo valores positivos(sin signo)
+    signed : Valores positivos y negativos(por omisión)
+    long : Formato largo(para enteros únicamente)
+
+
+    Ejemplos : 
+    unsigned int
+    signed char 
+
+
+    (Siguiendo con la aclaración : 
+    signed char : -128 a 127 
+    unsigned char : 0 a 255 
+    char : Varía(-128 a 127 ó 0 a 255))
+
+    long int(usualmente representado como long) 
+    unsigned long int
+_
+A las variables se las puede declarar de diferentes maneras :
+
+
+    Declaración simple : char c;
+    unsigned int i;
+
+    Declaración múltiple : char c, d;
+    unsigned int i, j, k;
+
+    Declaración y asignación : char c =’A’;
+    unsigned int i = 133, j = 1229;
+_
+
+sizeof() se utiliza para determinar el 
+número de bytes que ocupa una variable o un tipo
+
+TIPOS DE VARIABLES
+
+    | Especificador | Tipo                  | Ejemplo        |
+    | ------------- | --------------------- | -------------- |
+    | `%d`          | `int` (entero)        | `25`           |
+    | `%f`          | `float`               | `3.14`         |
+    | `%lf`         | `double`              | `3.141592`     |
+    | `%c`          | `char` (carácter)     | `'A'`          |
+    | `%s`          | cadena de caracteres  | `"Hola"`       |
+    | `%u`          | `unsigned int`        | `25` sin signo |
+    | `%x`          | entero en hexadecimal | `FF`           |
+    | `%o`          | entero en octal       | `17`           |
+    | `%zu`         | para sizeof()         | printf("%zu", sizeof(int)); |
+_
+
+OPERADORES
+    | Operador | Significa         |
+    | -------- | ----------------- |
+    | `==`     | igual a           |
+    | `!=`     | distinto de       |
+    | `>`      | mayor que         |
+    | `<`      | menor que         |
+    | `>=`     | mayor o igual que |
+    | `<=`     | menor o igual que |
+_
+
+SCANF
+    scanf es el encargado de LEER, Con scanf, el programa le pide al usuario que lo escriba:
+
+    int numero;
+
+    scanf("%d", &numero);
+    
+    %d: Le dice a scanf: "Voy a recibir un número entero (int)."  Es parecido al %d que ya conocés de printf.
+    
+    &numero: El & le indica a scanf dónde tiene que guardar el dato que acaba de recibir.
+_
